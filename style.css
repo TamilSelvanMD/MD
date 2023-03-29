@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #f2f6f7;
+}
+
+.logo {
+    width: 12rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+/* -------------------- */
+/*     BASIC RESET      */
+/* -------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+:root {
+    /* COLORS */
+    --clr-dark: 230 35% 7%;
+    --clr-accent: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+    --gap: 3rem;
+  
+    /* FONT SIZES */
+    --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+    --fs-800: 3.5rem;
+    --fs-700: 1.5rem;
+    --fs-600: 1rem;
+    --fs-500: 1rem;
+    --fs-400: 0.9375rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+  
+    /* FONT-FAMILIES */
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+  }
+  
+  /* Global Reset */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  /* Margin Reset */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  picture {
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-weight: 400;
+  }
+  
+  body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-accent));
+    min-height: 100vh;
+    line-height: 1.6;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    overflow-x: hidden;
+    background: url(./assesst/pxfuel.jpg) center center/cover
+    ;
+  }
+  
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font-family: inherit;
+  }
+  
+  nav {
+    justify-content: space-between;
+    padding: 2rem 0rem 2rem 2rem;
+    
+  }
+
+
+  .flex {
+    display: flex;
+   
+  }
+  .list {
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    backdrop-filter: blur(6px) saturate(200%);
+    -webkit-backdrop-filter: blur(1px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.54);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    
+   }
+
+  .list li{
+    font-size:30px;
+  }
+
+  .logo {
+    margin-top: -2rem;
+    margin-left: -3rem;
+  }
+
+  .list > li > span {
+  font-weight: bold;
+  margin-right: 0.9rem;
+  }
+
+  .hero_container  {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .hero_container p {
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    width: 75rem;
+  }
+  .hero_container 
+
+  .hero_container img {
+    margin-left: 100rem;
+
+  }
+ 
